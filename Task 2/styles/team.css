@@ -1,0 +1,9 @@
+.team {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.team .team-text {
+  padding: 2rem;
+}

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+  margin: 1rem;
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 3px lightblue;
+}
+
+.navbar h2 {
+  color: pink;
+  font-family: "Satisfy";
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+.navbar a:hover {
+  background-color: pink;
+  color: black;
+}
+
+@media (max-width: 700px) {
+  .navbar a {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    padding: 0 10rem;
+  }
+}

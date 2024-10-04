@@ -1,0 +1,21 @@
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.about .card {
+  max-width: 14rem;
+  height: 12rem;
+  background-color: antiquewhite;
+  padding: 3rem;
+  box-sizing: border-box;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.about .card:hover {
+  box-shadow: 0px 6px 10px 0px grey;
+  transition: 0.3s;
+}

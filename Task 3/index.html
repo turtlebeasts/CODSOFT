@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="main.css" />
+    <meta
+      name="keyword"
+      content="calki, calki2, turtlebeasts, calculator, javascript, HTML, CSS, web"
+    />
+  </head>
+  <body>
+    <div id="keyboard">
+      <input
+        type="tel"
+        id="display"
+        name="text"
+        class="form-control-tel"
+        value="0"
+      />
+      <ul id="keybind">
+        <li class="numb" onclick="number_input(this)">1</li>
+        <li class="numb" onclick="number_input(this)">2</li>
+        <li class="numb" onclick="number_input(this)">3</li>
+        <li class="sym" onclick="number_input(this)">+</li>
+        <li class="numb" onclick="number_input(this)">4</li>
+        <li class="numb" onclick="number_input(this)">5</li>
+        <li class="numb" onclick="number_input(this)">6</li>
+        <li class="sym" onclick="number_input(this)">-</li>
+        <li class="numb" onclick="number_input(this)">7</li>
+        <li class="numb" onclick="number_input(this)">8</li>
+        <li class="numb" onclick="number_input(this)">9</li>
+        <li class="sym" onclick="number_input(this)">*</li>
+        <li class="numb" onclick="number_input(this)">0</li>
+        <li class="sym" onclick="number_input(this)">CE</li>
+        <li class="sym" onclick="number_input(this)">=</li>
+        <li class="sym" onclick="number_input(this)">/</li>
+      </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: rgb(70, 70, 70);
+  background: linear-gradient(
+    48deg,
+    rgba(70, 70, 70, 1) 0%,
+    rgba(128, 128, 128, 1) 18%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.form-control-tel {
+  margin: 0 15px 15px 0;
+  padding: 15px;
+  padding-right: 75px;
+}
+
+#keybind {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#keyboard {
+  margin: 100px auto;
+  width: 300px;
+}
+
+#keybind li {
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: -10px 11px 23px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
+}
+
+#display {
+  text-align: right;
+  border: none;
+  outline: none;
+  box-shadow: -10px 11px 23px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  background: rgb(23, 23, 23);
+  background: linear-gradient(
+    67deg,
+    rgb(231 231 231) 0%,
+    rgb(231 231 231) 23%,
+    rgb(255 255 255) 26%,
+    rgb(245 244 244) 29%,
+    rgb(255 255 255) 32%,
+    rgb(251 251 251) 35%,
+    rgb(235 235 235) 38%,
+    rgb(239 239 239) 39%,
+    rgb(255 255 255) 52%,
+    rgb(245 245 245) 56%,
+    rgb(255 255 255) 100%
+  );
+  color: rgb(70 70 70 / 32%);
+  font-size: 26px;
+  width: 165px;
+  font-family: Digital;
+}
+
+@font-face {
+  font-family: "Digital";
+  src: url("digital-7.ttf");
+}
+
+li.sym {
+  color: #d56464;
+  font-weight: bold;
+}
+li.numb {
+  color: grey;
+}

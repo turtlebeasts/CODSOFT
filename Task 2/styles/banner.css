@@ -1,0 +1,12 @@
+.banner {
+  margin: 1rem;
+  padding: 3rem;
+  text-align: left;
+  border-radius: 15px;
+  background: linear-gradient(to right, orange, pink);
+}
+
+.banner h3 {
+  color: white;
+  font-size: 3rem;
+}
