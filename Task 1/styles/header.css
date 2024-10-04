@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 5rem;
+}
+
+.copy-button {
+  width: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #131313;
+  padding: 0 1.5rem;
+  border-radius: 15px;
+}
+
+.copy-button:hover {
+  cursor: pointer;
+}

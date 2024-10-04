@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/skills.css" />
+    <link rel="stylesheet" href="styles/project.css" />
+    <link rel="stylesheet" href="styles/resume.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="logo">মৃগাংক</h1>
+      <div class="copy-button" id="copy-button">
+        <i class="fa-regular fa-clipboard" id="copy"></i>
+        <p id="contact">mrigz179@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Mriganka</h1>
+      </div>
+    </div>
+
+    <div class="about">
+      <hr />
+      <i class="fa-solid fa-circle"></i> Available
+      <h2>Web Developer</h2>
+      <p>
+        Hello! I’m Mriganka, a passionate web developer dedicated to crafting
+        engaging and user-friendly digital experiences. With a strong foundation
+        in both front-end and back-end technologies, I enjoy transforming ideas
+        into functional, visually appealing websites. I thrive on challenges and
+        continuously seek to expand my skills in HTML, CSS, JavaScript, and
+        various frameworks. My approach to development emphasizes clean,
+        efficient code and responsive design, ensuring that users have a
+        seamless experience across all devices. When I’m not coding, you can
+        find me exploring new technologies, contributing to open-source
+        projects, or collaborating with other creatives. I believe that
+        collaboration fosters innovation, and I'm always eager to learn from
+        others. Let’s connect and build something amazing together!
+      </p>
+    </div>
+
+    <div class="skills">
+      <h1>Skills</h1>
+      <div class="skill-list">
+        <div class="skill-item">
+          <i class="fa-brands fa-html5"></i>
+          <h4>HTML5</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-css3-alt"></i>
+          <h4>CSS3</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-js"></i>
+          <h4>JavaScript</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-react"></i>
+          <h4>ReactJS</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <hr />
+      <h1>Projects</h1>
+      <div class="project-list">
+        <div class="project-item">
+          <img src="assets/ilct_platform-min.png" alt="first" />
+          <div class="detail">
+            <h3>ILCT Platform</h3>
+            <p>
+              An interactive live coding and teaching platform made for sectors
+              of educations where student and teacher can collaborate to make
+              classroom learning on the web fun and interactive.
+            </p>
+            <a href="https://ilct-color.netlify.app/"
+              >https://ilct-color.netlify.app/</a
+            >
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="assets/javascript_practice-min.png" alt="second" />
+          <div class="detail">
+            <h3>JS exe</h3>
+            <p>
+              A project made for beginners in JavaScript to contribute to open
+              source. One can learn from it, make their own sample projects and
+              contribute it to the repository as well as make changes to other's
+              contribution and send a PR.
+            </p>
+            <a href="https://jsexe.netlify.app/">https://jsexe.netlify.app/</a>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="assets/portfolioIm-min.png" alt="first" />
+          <div class="detail">
+            <h3>Portfolio</h3>
+            <p>
+              Another portfolio made using ReactJS, with custom styling and,
+              features various colors themes one can choose to interact with the
+              portfolio. Contains serveral pages for knowing about me and my
+              work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume">
+      <div
+        class="download-icon"
+        onclick="window.location.href='assets/resume.pdf'"
+      >
+        <i class="fa-solid fa-file-arrow-down"></i>
+      </div>
+      <div class="download-text">
+        <h5>Download my resume</h5>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h1>mrigz179@gmail.com</h1>
+      <h3>+91 70995 97705</h3>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 Mriganka Das. All rights reserved.</p>
+      <nav>
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script>
+      const copyButton = document.getElementById("copy-button");
+      const copy = document.getElementById("copy");
+      const contact = document.getElementById("contact");
+
+      copyButton.addEventListener("click", function () {
+        navigator.clipboard.writeText("mrigz179@gmail.com");
+        copy.style.color = "green";
+        copy.classList.remove("fa-regular");
+        copy.classList.remove("fa-clipboard");
+        copy.classList.add("fa-solid");
+        copy.classList.add("fa-circle-check");
+
+        contact.innerText = "copied to clipboard!";
+
+        setTimeout(function () {
+          copy.style.color = "white";
+          copy.classList.remove("fa-solid");
+          copy.classList.remove("fa-circle-check");
+          copy.classList.add("fa-regular");
+          copy.classList.add("fa-clipboard");
+          contact.innerText = "mrigz179@gmail.com";
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>

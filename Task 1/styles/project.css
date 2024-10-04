@@ -1,0 +1,32 @@
+.project {
+  padding: 5rem 5rem;
+  color: white;
+}
+
+.project-item {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.project-item img {
+  max-width: 50%;
+  height: 50%;
+}
+
+.project-item .detail {
+  padding-left: 2rem;
+}
+
+@media (max-width: 720px) {
+  .project-item {
+    display: block;
+  }
+  .project-item img {
+    width: 100%;
+    height: 100%;
+  }
+  .project .detail {
+    padding-left: 0;
+  }
+}

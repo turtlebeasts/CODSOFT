@@ -1,0 +1,16 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0e0e0e;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 800px) {
+  body {
+    padding: 0 10rem;
+  }
+}

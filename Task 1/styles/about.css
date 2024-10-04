@@ -1,0 +1,10 @@
+.about {
+  padding: 2rem 5rem;
+  color: white;
+}
+
+.about i {
+  color: lightgreen;
+  border: 2px solid rgb(164, 255, 164);
+  border-radius: 50%;
+}

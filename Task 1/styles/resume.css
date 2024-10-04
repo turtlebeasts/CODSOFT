@@ -1,0 +1,27 @@
+.resume {
+  border-radius: 15px;
+  background-color: #131313;
+  margin: 0 5rem;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.download-icon {
+  font-size: 4rem;
+  color: grey;
+  transition: 0.3s;
+}
+
+.download-icon:hover {
+  color: white;
+  transition: 0.3s;
+  text-shadow: 0px 0px 30px green;
+}
+
+.download-text {
+  color: grey;
+  font-size: 2rem;
+}
